@@ -8,7 +8,7 @@ public class LifeController : Controller
     {
         return Created("",value);
     }
-}
+
 [HttpGet("{id}")]
 public IActionResult Get(int id)
 
@@ -26,4 +26,5 @@ public IActionResult Put(int id, [FromBody]string value)
 public IActionResult Delete(int id)
 {
     return Delete(id);
+}
 }

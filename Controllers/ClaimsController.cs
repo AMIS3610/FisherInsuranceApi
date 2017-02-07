@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-
-[Route ("api/auto/quotes")]
-public class AutoController : AutoController
+//ClaimsController
+[Route ("api/customer/claims")]
+public class CustomerCareController : CustomerCareController
 {
     [HttpPost]
     public IActionResult Post([FromBody]string value)
@@ -20,7 +20,7 @@ public IActionResult Put(int id, [FromBody]string value)
 {
     return NoContent();
 }
-// DELETE api/auto/quotes/id
+// DELETE api/customer/claims/id
 
 [HttpDelete("{id}")]
 public IActionResult Delete(int id)

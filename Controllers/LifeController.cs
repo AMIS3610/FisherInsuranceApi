@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 //LifeController
 [Route ("api/life/quotes")]
-public class LifeController : LifeController
+public class LifeController : Controller
 {
     [HttpPost]
     public IActionResult Post([FromBody]string value)

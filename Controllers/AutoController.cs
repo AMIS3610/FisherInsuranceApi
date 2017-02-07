@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [Route ("api/auto/quotes")]
-public class AutoController : AutoController
+public class AutoController : Controller
 {
     [HttpPost]
     public IActionResult Post([FromBody]string value)

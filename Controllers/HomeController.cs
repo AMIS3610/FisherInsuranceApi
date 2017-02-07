@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 //HomeController
 [Route ("api/home/quotes")]
-public class HomeController : HomeController
+public class HomeController : Controller
 {
     [HttpPost]
     public IActionResult Post([FromBody]string value)

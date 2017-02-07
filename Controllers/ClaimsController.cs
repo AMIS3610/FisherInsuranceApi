@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 //ClaimsController
 [Route ("api/customer/claims")]
-public class CustomerCareController : CustomerCareController
+public class CustomerCareController : Controller
 {
     [HttpPost]
     public IActionResult Post([FromBody]string value)

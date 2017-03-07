@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+
 namespace FisherInsuranceApi
 {
     public class Startup
@@ -29,7 +30,7 @@ namespace FisherInsuranceApi
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddSingleton<IMemoryStore, MemoryStore>();
+            services.AddDbContext<FisherContext>();
             services.AddMvc();
         }
 

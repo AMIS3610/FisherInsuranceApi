@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
+//using Microsoft.Extensions.Configuration;
 
 namespace FisherInsuranceApi
 {
@@ -13,13 +13,13 @@ namespace FisherInsuranceApi
     {
         public static void Main(string[] args)
         {
-            var config = new ConfigurationBuilder()
+            /*var config = new ConfigurationBuilder()
                 .AddCommandLine(args)
                 .AddEnvironmentVariables(prefix: "ASPNETCORE_")
-                .Build();
+                .Build();*/
 
             var host = new WebHostBuilder()
-                .UseConfiguration(config)
+                //.UseConfiguration(config)
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
